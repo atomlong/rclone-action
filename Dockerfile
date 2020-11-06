@@ -5,9 +5,9 @@ LABEL "com.github.actions.description"="Wraps the rclone CLI to be used in Githu
 LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="blue"
 
-LABEL "repository"="http://github.com/wei/rclone"
-LABEL "homepage"="http://github.com/wei/rclone"
-LABEL "maintainer"="Wei He <github@weispot.com>"
+LABEL "repository"="https://github.com/atomlong/rclone-action"
+LABEL "homepage"="https://github.com/atomlong/rclone-action"
+LABEL "maintainer"="Atom Long <atom.long@hotmail.com>"
 
 RUN apk add --no-cache bash curl unzip ca-certificates fuse openssh-client \
   && wget -qO- https://rclone.org/install.sh | bash \
