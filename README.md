@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: rclone
-      uses: wei/rclone@v1
+      uses: atomlong/rclone@v1
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
@@ -34,9 +34,3 @@ docker run --rm -e "RCLONE_CONF=$(cat ~/.config/rclone/rclone.conf)" $(docker bu
   copy <source>:<source_path> <dest>:<dest_path>
 ```
 
-## Author
-[Wei He](https://github.com/wei) _github@weispot.com_
-
-
-## License
-[MIT](https://wei.mit-license.org)
